@@ -16,7 +16,7 @@ class PopupHandler extends SafeEventEmitter {
 
   timeout: number;
 
-  constructor({ url, target, features, timeout = 30000 }: { url: URL; target?: string; features?: string; timeout?: number }) {
+  constructor({ url, target, features, timeout = 5000 }: { url: URL; target?: string; features?: string; timeout?: number }) {
     super();
     this.url = url;
     this.target = target || "_blank";
